@@ -7,13 +7,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
   justify-content: center;
-  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
   padding-bottom: 40px;
 }
 
 @media screen and (max-width: 627px) {
   .cards__list {
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 }
