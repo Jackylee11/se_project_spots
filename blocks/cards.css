@@ -15,5 +15,7 @@
   .cards__list {
     display: block;
     padding-bottom: 0;
+    max-width: 288px;
+    margin: 0 auto;
   }
 }

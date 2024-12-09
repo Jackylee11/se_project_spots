@@ -15,7 +15,7 @@
   opacity: 40%;
   margin-top: 12px;
   transition: 0.3s;
-  cursor: url("../images/pointer.svg"), auto;
+  cursor: pointer;
 }
 
 .card__content {
@@ -38,6 +38,7 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 353px;
+  color: #212121;
 }
 
 .card__like-button:hover {

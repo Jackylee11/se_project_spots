@@ -23,6 +23,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -36,7 +37,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
-  line-height: 24px;
+  line-height: 16px;
 }
 
 .profile__column {
@@ -61,7 +62,7 @@
   margin-left: auto;
   line-height: 16px;
   gap: 8px;
-  cursor: url("../images/pointer.svg"), auto;
+  cursor: pointer;
 }
 
 .profile__edit-button {
@@ -77,7 +78,7 @@
   margin-bottom: 0;
   transition: 0.3s;
   line-height: 16px;
-  cursor: url("../images/pointer.svg"), auto;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
@@ -109,7 +110,6 @@
     margin-left: 0;
     max-width: 288px;
     width: 288px;
-    height: 52px;
   }
 
   .profile__edit-button {
@@ -129,7 +129,6 @@
   }
 
   .profile__description {
-    margin: 0;
     max-width: 288px;
   }
 }

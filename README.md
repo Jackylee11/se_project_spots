@@ -16,7 +16,7 @@ In this project i have used all the standard make ups of a normal css and html b
 
 this webpage is deployed to gid hub pages
 
--[Deployment Link](https://github.com/Jackylee11/se_project_spots.git)
+-[Deployment Link](https://jackylee11.github.io/se_project_spots/index.html)
 
 ## Page examples
 
