@@ -22,8 +22,10 @@ this webpage is deployed to gid hub pages
 
 Below are examples of the dynamic out look of the webpages and how they are custom to fit multiple screen sizes!
 
--[Example Images](<./images/Screenshot%20(4).png>)
+-[Example Images](./images/1440%20image.PNG>)
 
--[Example Images](<./images/Screenshot%20(5).png>)
+-[Example Images](./images/627%20image.PNG>)
 
--[Example Images](<./images/Screenshot%20(6).png>)
+## Video of project
+
+-[video link](https://drive.google.com/file/d/1hn7OqOfGlwiGY3e-fY2P8JieRRWLm2L7/view?usp=sharing)
