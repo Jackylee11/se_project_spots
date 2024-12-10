@@ -28,4 +28,4 @@ Below are examples of the dynamic out look of the webpages and how they are cust
 
 ## Video of project
 
--[video link](https://drive.google.com/file/d/1hn7OqOfGlwiGY3e-fY2P8JieRRWLm2L7/view?usp=sharing)
+-[video link](https://drive.google.com/file/d/1aNVkH1bHp5731RLZuN2zm-xb1wgbqLNJ/view?usp=sharing)

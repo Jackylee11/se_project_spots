@@ -38,6 +38,7 @@
   -webkit-box-orient: vertical;
   max-width: 420px;
   line-height: 16px;
+  color: #212121;
 }
 
 .profile__column {
@@ -122,10 +123,6 @@
     font-size: 20px;
     margin: 0 0 12px;
     max-width: 288px;
-  }
-
-  .profile__column {
-    margin: 0 0 20px;
   }
 
   .profile__description {
