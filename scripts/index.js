@@ -133,12 +133,6 @@ modalContainerCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
-modal.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 cardForm.addEventListener("submit", handleAddCardSubmit);
 
