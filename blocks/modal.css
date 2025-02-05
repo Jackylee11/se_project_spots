@@ -102,6 +102,7 @@
   background-color: #212121;
   color: #fcf5e5;
   cursor: pointer;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .modal__input:hover {
@@ -129,15 +130,15 @@
   margin-top: 8px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   padding: 4px 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 353px;
 }
 
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
-  }
-
-  .modal__container {
-    padding: 12px;
   }
 
   .modal__title {
@@ -164,5 +165,20 @@
   .modal__close-btn_preview {
     top: -35px;
     right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal__image {
+    max-width: 288px;
+  }
+
+  .modal__caption {
+    max-width: 288px;
+    box-sizing: border-box;
+  }
+
+  .modal__close-btn {
+    top: -45px;
   }
 }

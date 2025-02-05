@@ -38,7 +38,7 @@ const profileDescription = document.querySelector(".profile__description");
 const editModal = document.querySelector("#edit-modal");
 const cardModalBtn = document.querySelector(".profile__add-button");
 const editFormElement = editModal.querySelector(".modal__form");
-const closeButton = editModal.querySelector(".modal__close-btn");
+const editModalcloseButton = editModal.querySelector(".modal__close-btn");
 const editModalNameInput = editModal.querySelector("#profile-name-input");
 const editModalDescriptionInput = editModal.querySelector(
   "#profile-description-input"
@@ -54,7 +54,7 @@ const cardLinkInput = cardModal.querySelector("#add-card-link-input");
 const previewModal = document.querySelector("#preview-modal");
 const previewModalImageEL = previewModal.querySelector(".modal__image");
 const previewModalCaptionEl = previewModal.querySelector(".modal__caption");
-const modalContainerCloseBtn = previewModal.querySelector(
+const previewModalContainerCloseBtn = previewModal.querySelector(
   ".modal__container_type_preview"
 );
 
@@ -79,8 +79,8 @@ function getCardElement(data) {
     previewModalCaptionEl.textContent = data.name;
   });
 
-  cardLinkEl.addEventListener("click", () => {
-    cardLinkEl.classList.add(".modal_opened");
+  cardLikeButton.addEventListener("click", () => {
+    cardLikeButton.classList.toggle("card__like-button_liked");
   });
 
   cardTrashButton.addEventListener("click", () => {
@@ -113,6 +113,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   closeModal(cardModal);
+  evt.target.reset();
 }
 
 profileEditButton.addEventListener("click", () => {
@@ -120,7 +121,7 @@ profileEditButton.addEventListener("click", () => {
   editModalDescriptionInput.value = profileDescription.textContent;
   openModal(editModal);
 });
-closeButton.addEventListener("click", () => {
+editModalcloseButton.addEventListener("click", () => {
   closeModal(editModal);
 });
 cardModalBtn.addEventListener("click", () => {
@@ -129,7 +130,7 @@ cardModalBtn.addEventListener("click", () => {
 cardModalCloseBtn.addEventListener("click", () => {
   closeModal(cardModal);
 });
-modalContainerCloseBtn.addEventListener("click", () => {
+previewModalContainerCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 

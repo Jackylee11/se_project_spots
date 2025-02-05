@@ -67,6 +67,7 @@
   border: none;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .card__trash-btn:hover {
