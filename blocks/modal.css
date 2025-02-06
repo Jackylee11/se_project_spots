@@ -33,6 +33,7 @@
 .modal__container_type_preview {
   padding: 0;
   width: fit-content;
+  max-width: none;
   background-color: transparent;
 }
 
@@ -58,11 +59,9 @@
 
 .modal__close-btn_preview {
   background-image: url(../images/white__x_button.svg);
-  top: 0;
-  right: -52.5px;
+  top: -8px;
+  right: -45px;
   opacity: 1;
-  height: 40px;
-  width: 40px;
 }
 
 .modal__title {
@@ -178,7 +177,11 @@
     box-sizing: border-box;
   }
 
-  .modal__close-btn {
+  .modal__close-btn_preview {
     top: -45px;
+  }
+
+  .modal__container {
+    padding: 12px;
   }
 }
