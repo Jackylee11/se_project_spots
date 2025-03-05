@@ -119,6 +119,11 @@ function handleAddCardSubmit(evt) {
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
+  resetValidation(
+    editFormElement,
+    [editModalNameInput, editModalDescriptionInput],
+    settings
+  );
   openModal(editModal);
 });
 editModalcloseButton.addEventListener("click", () => {
@@ -130,8 +135,28 @@ cardModalBtn.addEventListener("click", () => {
 cardModalCloseBtn.addEventListener("click", () => {
   closeModal(cardModal);
 });
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal(cardModal);
+  }
+});
+window.addEventListener("click", function (event) {
+  if (event.target === cardModal) {
+    closeModal(cardModal);
+  }
+});
 previewModalContainerCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeModal(editModal);
+  }
+});
+window.addEventListener("click", function (event) {
+  if (event.target === editModal) {
+    closeModal(editModal);
+  }
 });
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);

@@ -7,7 +7,6 @@ const settings = {
   errorClass: "modal__error",
 };
 
-
 const showInputError = (formElement, inputElement, errorMsg, config) => {
   const errorMsgEl = formElement.querySelector(`#${inputElement.id}-error`);
   errorMsgEl.textContent = errorMsg;
@@ -22,7 +21,12 @@ const hideInputError = (formElement, inputElement, config) => {
 
 const checkInputValidity = (formElement, inputElement, config) => {
   if (!inputElement.validity.valid) {
-    showInputError(formElement, inputElement, inputElement.validationMessage, config);
+    showInputError(
+      formElement,
+      inputElement,
+      inputElement.validationMessage,
+      config
+    );
   } else {
     hideInputError(formElement, inputElement, config);
   }
@@ -48,8 +52,16 @@ const disableButton = (buttonElement, config) => {
   buttonElement.classList.add(config.inactiveButtonClass);
 };
 
+const resetValidation = (formElement, inputList, config) => {
+  inputList.forEach((input) => {
+    hideInputError(formElement, input, config);
+  });
+};
+
 const setEventListener = (formElement, config) => {
-  const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
+  const inputList = Array.from(
+    formElement.querySelectorAll(config.inputSelector)
+  );
   const buttonElement = formElement.querySelector(config.submitButtonSelector);
 
   toggleButtonState(inputList, buttonElement, config);
