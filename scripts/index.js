@@ -92,7 +92,6 @@ function getCardElement(data) {
 }
 
 function handlePressEsc(event) {
-  console.log("key pressed");
   if (event.key === "Escape") {
     const currentModal = document.querySelector(".modal_opened");
     closeModal(currentModal);
@@ -100,12 +99,10 @@ function handlePressEsc(event) {
 }
 
 function clickOutModal(event) {
-  //const currentModal = document.querySelector(".modal_opened");
-  console.log(event.target);
   if (
     event.target === event.currentTarget ||
     event.target.classList.contains("modal__close-btn")
-   ) {
+  ) {
     closeModal(event.currentTarget);
   }
 }
@@ -149,46 +146,16 @@ profileEditButton.addEventListener("click", () => {
   );
   openModal(editModal);
 });
-// editModalcloseButton.addEventListener("click", () => {
-//   closeModal(editModal);
-// });
+
 cardModalBtn.addEventListener("click", () => {
   openModal(cardModal);
 });
-// cardModalCloseBtn.addEventListener("click", () => {
-//   closeModal(cardModal);
-// });
+
 function closeOnEsc(event) {
   if (event.key === "Escape") {
     openModal(cardModal);
   }
 }
-//cardModalBtn.addEventListener("keydown", (event) => {
-//  if (event.key === "Escape") {
-//    openModal(cardModal);
-//  }
-//});
-//cardModalBtn.addEventListener("keydown", (event) => {
-//  if (event.key === "Escape") {
-//    closeModal(cardModal);
-//  }
-//});
-//window.addEventListener("click", function (event) {
-//  if (event.target === cardModal) {
-//    closeModal(cardModal);
-//  }
-//});
-
-// previewModalContainerCloseBtn.addEventListener("click", () => {
-//   closeModal(previewModal);
-// });
-
-//window.addEventListener("click", function (event) {
-//  console.log("click");
-//  if (event.target === editModal) {
-//    closeModal(editModal);
-//  }
-//});
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
 cardForm.addEventListener("submit", handleAddCardSubmit);
