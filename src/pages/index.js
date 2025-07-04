@@ -286,6 +286,7 @@ function handleAvatarSubmit(evt) {
     .then((data) => {
       profileImage.src = data.avatar;
       disableButton(avatarSubmitBtn, settings);
+      avatarForm.reset();
       closeModal(avatarModal);
     })
     .catch(console.error);
